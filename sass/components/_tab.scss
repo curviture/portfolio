@@ -1,0 +1,6 @@
+.tab {
+  display: none !important;
+  &.active {
+    display: flex !important;
+  }
+}

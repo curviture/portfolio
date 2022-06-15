@@ -1,0 +1,33 @@
+html {
+  font-size: 62.5%;
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  box-sizing: border-box;
+}
+
+body * {
+  box-sizing: inherit;
+}
+
+button {
+  border: none;
+  outline: none;
+  background-color: transparent;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style-type: none;
+}
+
+input[type="text"],
+textarea {
+  background-color: transparent;
+}

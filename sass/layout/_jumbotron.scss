@@ -1,0 +1,27 @@
+.main {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+
+  &__content {
+    font-size: 2rem;
+    color: $color-highlight;
+
+    &__text {
+      font-size: 2.4rem;
+      margin-bottom: 3rem;
+      letter-spacing: 5px;
+      line-height: 1.5;
+    }
+    &__cta {
+      margin-bottom: 4rem;
+    }
+  }
+
+  &__nav {
+    margin-top: auto;
+    margin-bottom: 5rem;
+  }
+}

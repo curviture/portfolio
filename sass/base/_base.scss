@@ -1,0 +1,17 @@
+html {
+}
+
+body {
+  font-size: 1rem;
+  background-color: $color-main-1;
+  position: relative;
+}
+
+.wrapper {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column nowrap;
+}

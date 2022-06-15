@@ -1,0 +1,18 @@
+.button {
+  padding: 1rem 2rem;
+  font-size: 2rem;
+  cursor: pointer;
+
+  &--primary {
+    color: $color-reverse;
+    border: 1px solid $color-reverse;
+  }
+
+  &--cta {
+    transition: all 0.1s;
+    &:hover {
+      background-color: $color-highlight;
+      color: $color-main-2;
+    }
+  }
+}

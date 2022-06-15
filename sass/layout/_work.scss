@@ -1,0 +1,90 @@
+.work {
+  display: flex;
+  flex-flow: column nowrap;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+
+  &__title {
+    font-size: 3rem;
+    color: $color-highlight;
+  }
+
+  &__list {
+    width: 100%;
+    height: 50rem;
+    overflow-y: scroll;
+  }
+
+  &__item {
+    display: flex;
+    flex-flow: row nowrap;
+    height: 18rem;
+    overflow: hidden;
+    width: 100%;
+    background-color: $color-main-2;
+    margin-bottom: 2rem;
+    transition: all 0.4s;
+
+    &:hover {
+      transform: scale(1.025);
+    }
+
+    &__header {
+      width: 20rem;
+      clip-path: polygon(0 0, 100% 0, 75% 100%, 0% 100%);
+      background-color: salmon;
+      z-index: 2;
+      display: flex;
+      flex-flow: column nowrap;
+      justify-content: center;
+      padding: 0 3rem;
+      transition: all 0.4s;
+
+      &:hover {
+        width: 21rem;
+      }
+    }
+    &__title {
+      font-size: 1.8rem;
+      color: $color-highlight;
+    }
+
+    &__body {
+      margin-left: -15rem;
+      position: relative;
+      clip-path: polygon(20% 0, 100% 0, 100% 100%, 0% 100%);
+
+      &__backdrop {
+        display: flex;
+        visibility: hidden;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        top: 0;
+        background-color: rgba(0, 0, 0, 0.5);
+        position: absolute;
+        color: $color-highlight;
+        font-size: 2rem;
+        text-align: center;
+        line-height: 20rem;
+        justify-content: center;
+        align-items: center;
+      }
+
+      &:hover &__backdrop {
+        visibility: visible;
+      }
+    }
+
+    &__img-box {
+      width: 50rem;
+      height: 18rem;
+    }
+
+    &__img {
+      width: 100%;
+      height: auto;
+    }
+  }
+}
